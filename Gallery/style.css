@@ -91,6 +91,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
   }
   
   .img-name,
@@ -112,3 +113,104 @@
     filter: brightness(50%) grayScale(100%) blur(7px);
     transform: scale(1.07);
   }
+
+ /* Add this to your existing CSS */
+
+.full-screen-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  
+  .full-screen-view img {
+    max-width: 90%;
+    max-height: 80%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .back-arrow,
+  .nav-arrow {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .back-arrow {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .left-arrow {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .right-arrow {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* Add this to your existing CSS */
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slideOutToRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInFromLeft 0.5s forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInFromRight 0.5s forwards;
+  }
+  
+  .slide-out-left {
+    animation: slideOutToLeft 0.5s forwards;
+  }
+  
+  .slide-out-right {
+    animation: slideOutToRight 0.5s forwards;
+  }
+  

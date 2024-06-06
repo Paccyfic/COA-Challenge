@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -21,61 +21,15 @@
     <title>COA-challenge</title>
   </head>
   <body>
-    <div class="parent-container">
-      <div class="gallery" id="gallery1">
-        <img src="./assets/images/fox.png" alt="" />
-        <div class="low-section">
-          <span class="img-name">
-            FENNEC <span class="line-break"></span>FOX
-          </span>
-          <span class="location">India</span>
-          <div class="kno-mo-container" id="kmoContainer1">
-            <span class="kno-mo">Know more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="gallery" id="gallery2">
-        <img src="./assets/images/whale.png" alt="" />
-        <div class="low-section">
-          <span class="img-name">
-            HUMPBACK <span class="line-break"></span>WHALE
-          </span>
-          <span class="location">South Africa</span>
-          <div class="kno-mo-container" id="kmoContainer2">
-            <span class="kno-mo">Know more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="gallery" id="gallery3">
-        <img src="./assets/images/baboon.png" alt="" />
-        <div class="low-section">
-          <span class="img-name">
-            COMMON BROWN <span class="line-break"></span>BABOON
-          </span>
-          <span class="location">South Africa</span>
-          <div class="kno-mo-container" id="kmoContainer3">
-            <span class="kno-mo">Know more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="gallery" id="gallery4">
-        <img src="./assets/images/deer.png" alt="" />
-        <div class="low-section">
-            <span class="img-name">
-              SPOTTED <span class="line-break"></span>DEER
-            </span>
-            <span class="location">Amazon</span>
-            <div class="kno-mo-container" id="kmoContainer4">
-              <span class="kno-mo">Know more</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <script type="text/javascript" src="./script.js"></script>
-    </body>
-  </html>
+    <div class="parent-container" id="parentContainer">
+      <!-- Gallery items will be dynamically inserted here -->
+    </div>
+    <div class="full-screen-view" id="fullScreenView">
+      <i class="fa-solid fa-arrow-left back-arrow" id="backArrow"></i>
+      <img src="" alt="Full Screen Image" id="fullScreenImg" />
+      <i class="fa-solid fa-arrow-left nav-arrow left-arrow" id="leftArrow"></i>
+      <i class="fa-solid fa-arrow-right nav-arrow right-arrow" id="rightArrow"></i>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
