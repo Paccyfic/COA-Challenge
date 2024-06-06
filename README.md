@@ -2,7 +2,9 @@
 
 ## 🌐 Live Demo
 
- **_[Click here](https://coa-gallery-challenge.netlify.app/)_**
+=> **_[Click here](https://coa-gallery-challenge.netlify.app/)_**
+
+
 
 ## 📑 Contents
 
