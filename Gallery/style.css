@@ -160,7 +160,6 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  /* Add this to your existing CSS */
 
   @keyframes slideInFromLeft {
     from {
