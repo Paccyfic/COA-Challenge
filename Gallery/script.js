@@ -35,7 +35,6 @@ const galleryData = [
   let currentIndex = 0;
   
   function showFullScreenImage(index, direction) {
-    // Add animation classes based on the direction
     if (direction === 'next') {
       fullScreenImg.classList.add('slide-out-left');
     } else if (direction === 'prev') {
@@ -45,10 +44,8 @@ const galleryData = [
     setTimeout(() => {
       fullScreenImg.src = galleryData[index].imgSrc;
   
-      // Remove old animation classes
       fullScreenImg.classList.remove('slide-out-left', 'slide-out-right');
   
-      // Add new animation classes based on the direction
       if (direction === 'next') {
         fullScreenImg.classList.add('slide-in-right');
       } else if (direction === 'prev') {
@@ -56,7 +53,7 @@ const galleryData = [
       }
   
       updateArrows();
-    }, 500); // Match this duration with your CSS animation duration
+    }, 500); 
   
     currentIndex = index;
     fullScreenView.style.display = 'flex';
