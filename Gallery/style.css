@@ -114,8 +114,6 @@
     transform: scale(1.07);
   }
 
- /* Add this to your existing CSS */
-
 .full-screen-view {
     display: none;
     position: fixed;
